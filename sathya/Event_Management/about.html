@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us | VS Event Management</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fdfdfd;
+        }
+        
+        
+
+        
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 60px;
+        }
+
+        nav img {
+            height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-size: 18px;
+            color: #444;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: darkorchid;
+        }
+
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        hr {
+            width: 80%;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+        }
+
+        .banner {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .content-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding: 40px 10%;
+            background-color: #fff7e6;
+        }
+
+        .about-image {
+            flex: 1 1 40%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .about-text {
+            flex: 1 1 50%;
+        }
+
+        .about-text h2 {
+            color: #8B0000;
+        }
+
+        .about-text p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .call-us {
+            color: darkolivegreen;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        
+        .stats-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: bisque;
+            padding: 40px 10%;
+            gap: 30px;
+        }
+
+        .stat-box {
+            flex: 1 1 200px;
+            text-align: center;
+        }
+
+        .stat-box img {
+            width: 60%;
+            height: 150px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        .stat-box h1 {
+            margin: 0;
+            font-size: 32px;
+            color: darkslateblue;
+        }
+
+        
+        .features-section {
+            padding: 40px 10%;
+            background-color: #f0f8ff;
+        }
+
+        .features-section h1 {
+            color: coral;
+        }
+
+        .features-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .features-column {
+            flex: 1 1 250px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .features-column p {
+            margin: 10px 0;
+        }
+
+
+        @media (max-width: 768px) {
+            .content-section,
+            .stats-section,
+            .features-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .features-column {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="vs.png" alt="VS Logo">
+            <ul>
+                <li><a href="event.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><button><a href="form.html">Login</a></button></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    
+    <h1>ABOUT US</h1>
+    <hr>
+
+    <img src="ab.jpg" class="banner" alt="Banner Image">
+
+    <section class="content-section">
+        <img src="abo.jpg" class="about-image" alt="About Image">
+        <div class="about-text">
+            <h2>Best Wedding Planner and Organizer in Tamil Nadu</h2>
+            <p>
+                VS Event Management, one of the best wedding planners in Chennai, brings over 15 years of experience to create unforgettable celebrations. We manage every event with genuine care and affection, offering personalized services tailored to your needs.
+            </p>
+            <p>
+                Whether you are planning a Hindu, Christian, Muslim, or multicultural wedding, we take care of all details—from rituals and décor to coordination—ensuring a seamless and joyful experience.
+            </p>
+            <p>
+                We specialize in budget-friendly weddings, destination events, and end-to-end management that reflect your personality and values.
+            </p>
+            <div class="call-us">
+                <h2>Call Us Anytime</h2>
+                <p>+91 9360560791</p>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+
+    <section class="stats-section">
+        <div class="stat-box">
+            <img src="abo1.png" alt="Weddings">
+            <h1>1200+</h1>
+            <p>Weddings Successfully Managed</p>
+        </div>
+        <div class="stat-box">
+            <img src="abo2.png" alt="Ranked 1">
+            <h1>#1</h1>
+            <p>Rated by ThreeBestRated</p>
+        </div>
+        <div class="stat-box">
+            <img src="abo5.png" alt="Years">
+            <h1>15+</h1>
+            <p>Years of Experience</p>
+        </div>
+        <div class="stat-box">
+            <img src="abo4.png" alt="Locations">
+            <h1>50+</h1>
+            <p>Wedding Locations Covered</p>
+        </div>
+    </section>
+
+    <hr>
+
+    
+    <section class="features-section">
+        <h1>Why Choose Us</h1>
+        <div class="features-grid">
+            <div class="features-column">
+                <p>👉 Custom Wedding</p>
+                <p>👉 Venue Selection</p>
+                <p>👉 Decoration Design</p>
+                <p>👉 Catering Solutions</p>
+                <p>👉 Event Coordination</p>
+            </div>
+            <div class="features-column">
+                <p>👉 Entertainment Services</p>
+                <p>👉 Invitation Creation</p>
+                <p>👉 Photography Services</p>
+                <p>👉 Bridal Makeup</p>
+                <p>👉 Hospitality Management</p>
+            </div>
+            <div class="features-column">
+                <p>👉 Ritual Services</p>
+                <p>👉 Wellness Packages</p>
+                <p>👉 Reception Planning</p>
+                <p>👉 Religious Ceremonies</p>
+                <p>👉 Transportation Services</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

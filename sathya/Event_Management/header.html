@@ -1,0 +1,87 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo img {
+    width: 60px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: blue;
+    text-decoration: none;
+    font-size: 25px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: darkorchid;
+}
+
+/* Main Content */
+#j8 {
+    width: 80%;
+    margin: 100px auto;
+    background-color: bisque;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#j8 h1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: darkorchid;
+}
+
+#j8 h2 {
+    color: darkgreen;
+}
+
+#j8 p {
+    text-align: justify;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Footer */
+#bot {
+    height: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Wedding Registration</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #87CEEB, #E0FFFF);
+            color: #333;
+        }
+
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 60px;
+        }
+
+        nav img {
+            height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-size: 18px;
+            color: #444;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: darkorchid;
+        }
+
+        nav ul li button {
+            background-color: darkgreen;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        nav ul li button a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .main-content {
+            background-color: white;
+            padding: 30px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            max-width: 1200px;
+            width: 90%;
+        }
+
+        h1 {
+            color: darkgreen;
+            text-align: center;
+        }
+
+        .top-image {
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        .contact-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .contact-info p {
+            margin: 15px 0;
+            font-size: 16px;
+        }
+
+        .contact-info img {
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .form-container {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .form-container h1 {
+            color: darkgreen;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 15px;
+        }
+
+        .form-row input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-row-single {
+            margin-bottom: 15px;
+        }
+
+        .form-row-single input,
+        .form-row-single textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        button[type="submit"] {
+            background-color: darkgreen;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: green;
+        }
+
+        .logo-img {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 120px;
+        }
+
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .contact-section {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    
+    <header>
+        <nav>
+            <img src="vs.png" alt="VS Logo">
+            <ul>
+                <li><a href="event.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><button><a href="form.html">Login</a></button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <h1>Contact The Best Wedding Planner Near You In Chennai</h1>
+        <hr>
+
+        <img src="con.jpg" alt="Contact Banner" class="top-image">
+
+        <h2 style="color: darkgreen;">CONTACT US</h2>
+
+        <div class="contact-section">
+            <div class="contact-info">
+                <p><img src="lo.jpg" alt="Location Icon" width="30"><strong> Office Address:</strong><br>
+                    No: 103, Thiruvalluvar Street,<br>
+                    Thirumazhisai, Chennai.</p>
+
+                <p><img src="call.jpg" alt="Phone Icon" width="30"><strong> Call Us:</strong><br>
+                    9360*******</p>
+
+                <p><img src="ma.jpg" alt="Email Icon" width="30"><strong> Mail Us:</strong><br>
+                    vijay@gmail.com</p>
+            </div>
+
+            <div class="form-container">
+                <img src="vs.png" alt="Wedding Logo" class="logo-img">
+                <h1>Book and Celebrate Your Dream Wedding With Us</h1>
+                <hr>
+
+                <form action="#" method="post">
+                    <div class="form-row">
+                        <input type="text" name="name" placeholder="Full Name" required>
+                        <input type="text" name="phone" placeholder="Phone Number" required>
+                    </div>
+
+                    <div class="form-row">
+                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="text" name="services" placeholder="Interested Services">
+                    </div>
+
+                    <div class="form-row">
+                        <input type="date" name="date" required>
+                        <input type="text" name="location" placeholder="Preferred Location">
+                    </div>
+
+                    <div class="form-row-single">
+                        <textarea name="message" placeholder="Your Message or Requirements"></textarea>
+                    </div>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <br>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.9673615919633!2d80.24750747500549!3d13.037749513424691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267f8aded6e21%3A0x2a195fac37ce0c6f!2sVs%20events%20management!5e0!3m2!1sen!2sin!4v1748243684918!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    
+    <footer>
+        &copy; 2025 VS Event Management. All Rights Reserved.
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | VS Event Management</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fffaf5;
+      color: #333;
+    }
+
+    /* Header and Navigation */
+    header {
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 60px;
+    }
+
+    nav img {
+      height: 50px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-left: 30px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      font-size: 18px;
+      color: #444;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: darkorchid;
+    }
+
+    /* Hero Section for Gallery Title */
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(to right, #fceabb, #f8b500);
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      color: darkorchid;
+      margin-bottom: 10px;
+    }
+
+    .hero h2 {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: darkgoldenrod;
+    }
+
+    hr {
+      width: 80%;
+      margin: 20px auto;
+      border: 1px solid #ddd;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      padding: 40px 10%;
+    }
+
+    .grid-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .grid-container img:hover {
+      transform: scale(1.03);
+    }
+
+    .caption {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #fdf6ef;
+    }
+
+    .caption h2 {
+      color: darkgreen;
+      margin-bottom: 10px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+
+      .hero h1, .hero h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header and Nav -->
+  <header>
+    <nav>
+      <img src="vs.png" alt="VS Logo">
+      <ul>
+        <li><a href="event.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+         <li><a href="contact.html">Contact Us</a></li>
+        <li><button><a href="form.html">Login</a></button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Our Gallery</h1>
+    <h2>Happy Wedding Day Moments</h2>
+  </div>
+
+  <hr />
+
+  <!-- Image Grid -->
+  <div class="grid-container">
+    <img src="download.jpg" alt="Wedding Moment 1" />
+    <img src="ima.jpg" alt="Wedding Moment 2" />
+    <img src="bg1.jpg" alt="Wedding Moment 3" />
+    <img src="ima3.jpg" alt="Wedding Moment 4" />
+    <img src="ima4.jpg" alt="Wedding Moment 5" />
+    <img src="dec.jpg" alt="Wedding Moment 6" />
+    <img src="dec2.jpg" alt="Wedding Moment 7" />
+    <img src="ima1.jpg" alt="Wedding Moment 8" />
+  </div>
+
+  <!-- Caption Section -->
+  <div class="caption">
+    <h2>Celebrate Your Love With Us</h2>
+    <p>
+      Home to the finest wedding planning and organizing, creating unforgettable
+      celebrations with a touch of elegance and expertise.
+    </p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 VS Event Management. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
